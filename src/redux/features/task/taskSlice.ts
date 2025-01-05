@@ -1,8 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+type Priority = 'low' | 'medium' | 'high'
 interface Task {
   id: string
   title: string
+  description: string
+  dueDate: Date
+  isCompleted: boolean
+  priority: Priority
 }
 
 export const taskSlice = createSlice({
