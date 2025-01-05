@@ -10,22 +10,22 @@ const routes = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Tasks />,
+        element: <Tasks />
       },
       {
         path: 'tasks',
-        element: <Tasks />,
+        element: <Tasks />
       },
       {
         path: 'users',
-        element: <Users />,
-      },
-    ],
+        element: <Users />
+      }
+    ]
   },
   {
     path: '/login',
-    element: <div>will add later</div>,
-  },
+    element: <div>will add later</div>
+  }
 ])
 
 export default routes

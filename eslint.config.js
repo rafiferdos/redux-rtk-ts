@@ -11,28 +11,28 @@ export default [
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
     languageOptions: {
       parser: '@typescript-eslint/parser', // Use TypeScript parser
-      globals: globals.browser,
+      globals: globals.browser
     },
     rules: {
       ...pluginJs.configs.recommended.rules, // ESLint recommended rules
       ...tseslint.configs.recommended.rules, // TypeScript recommended rules
       ...pluginReact.configs.flat.recommended.rules, // React recommended rules
       'react/react-in-jsx-scope': 'off', // Disable React import rule
-      'prettier/prettier': 'error', // Enforce Prettier formatting
-    },
+      'prettier/prettier': 'error' // Enforce Prettier formatting
+    }
   },
   // Prettier integration
   {
     plugins: {
-      prettier, // Register Prettier plugin
-    },
+      prettier // Register Prettier plugin
+    }
   },
   // React-specific settings
   {
     settings: {
       react: {
-        version: 'detect', // Automatically detect React version
-      },
-    },
-  },
+        version: 'detect' // Automatically detect React version
+      }
+    }
+  }
 ]
