@@ -13,10 +13,18 @@ const routes = createBrowserRouter([
         element: <Tasks />,
       },
       {
+        path: 'tasks',
+        element: <Tasks />,
+      },
+      {
         path: 'users',
         element: <Users />,
       },
     ],
+  },
+  {
+    path: '/login',
+    element: <div>will add later</div>,
   },
 ])
 
