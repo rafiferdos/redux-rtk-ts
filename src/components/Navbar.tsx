@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Link } from 'react-router-dom'
+import { ModeToggle } from './mode-toggle'
 
 export default function Navbar() {
   return (
@@ -36,6 +37,9 @@ export default function Navbar() {
             >
               Users
             </Link>
+            <div>
+              <ModeToggle />
+            </div>
           </div>
         </SheetContent>
       </Sheet>
@@ -62,6 +66,9 @@ export default function Navbar() {
         >
           Users
         </Link>
+        <div>
+          <ModeToggle />
+        </div>
       </nav>
     </header>
   )

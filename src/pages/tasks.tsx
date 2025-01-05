@@ -1,10 +1,5 @@
-
 const Tasks = () => {
-  return (
-    <div>
-      This is taskssss
-    </div>
-  );
-};
+  return <div>This is taskssss</div>
+}
 
-export default Tasks;
+export default Tasks
