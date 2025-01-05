@@ -1,5 +1,13 @@
+import { useAppSelector } from "@/redux/hook"
+
 const Tasks = () => {
-  return <div>This is taskssss</div>
+  const {task} = useAppSelector((state)=> state.tasks.task)
+  return (
+    <>
+      <h1>Tasks</h1>
+
+    </>
+  )
 }
 
 export default Tasks

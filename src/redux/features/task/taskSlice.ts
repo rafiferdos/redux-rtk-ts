@@ -13,14 +13,14 @@ interface Task {
 export const taskSlice = createSlice({
   name: 'task',
   initialState: {
-    tasks: [] as Task[]
+    task: [] as Task[]
   },
   reducers: {
     addTask: (state, action) => {
-      state.tasks.push(action.payload)
+      state.task.push(action.payload)
     },
     removeTask: (state, action) => {
-      state.tasks = state.tasks.filter((task) => task.id !== action.payload)
+      state.task = state.task.filter((task) => task.id !== action.payload)
     }
   }
 })
